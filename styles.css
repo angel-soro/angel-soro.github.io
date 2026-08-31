@@ -35,3 +35,73 @@
 .nav, nav, .navigation, .menu {
   border-bottom: 1px solid #111 !important;
 }
+
+/* V3 DEFINITIVA — composició final */
+header {
+  display: block !important;
+  padding: 28px 5vw 18px !important;
+  border-bottom: 0 !important;
+}
+.brand {
+  display: block !important;
+  width: fit-content !important;
+  margin: 0 auto 22px !important;
+  font-size: 21px !important;
+  text-align: center !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+nav {
+  justify-content: center !important;
+  gap: 24px !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+  border-bottom: 1px solid #111 !important;
+  padding-bottom: 10px !important;
+}
+nav a {
+  font-size: 13px !important;
+}
+.hero {
+  width: 82% !important;
+  margin: 35px auto 0 !important;
+  height: 190px !important;
+}
+.hero img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 58% !important;
+}
+.latest {
+  padding: 35px 5vw 70px !important;
+}
+.section-head {
+  padding-bottom: 14px !important;
+}
+.entries h3 {
+  font-size: 18px !important;
+}
+@media(max-width:900px) {
+  header {
+    display: block !important;
+    overflow-x: hidden !important;
+  }
+  .brand {
+    font-size: 19px !important;
+    margin-bottom: 18px !important;
+  }
+  nav {
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    gap: 16px !important;
+  }
+  .hero {
+    width: 92% !important;
+    height: 150px !important;
+    margin-top: 28px !important;
+  }
+  .latest {
+    padding-top: 28px !important;
+  }
+}
