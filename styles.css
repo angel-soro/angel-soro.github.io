@@ -105,3 +105,66 @@ nav a {
     padding-top: 28px !important;
   }
 }
+
+/* V4 — pàgines interiors més discretes */
+.page {
+  margin-top: 72px !important;
+}
+.page h1 {
+  font-size: 40px !important;
+  margin-bottom: 32px !important;
+}
+.article {
+  margin-top: 72px !important;
+}
+.article h1 {
+  font-size: 44px !important;
+  line-height: 1.2 !important;
+  margin: 14px 0 18px !important;
+}
+.archive {
+  margin-top: 52px !important;
+}
+.item {
+  grid-template-columns: 130px 1fr 30px !important;
+  gap: 24px !important;
+  padding: 26px 0 !important;
+}
+.item h2 {
+  font-size: 21px !important;
+  line-height: 1.4 !important;
+}
+.item .medium {
+  margin-top: 8px;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--muted);
+}
+.item .medium strong {
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+@media(max-width:900px) {
+  .page {
+    margin-top: 55px !important;
+  }
+  .page h1 {
+    font-size: 32px !important;
+    margin-bottom: 25px !important;
+  }
+  .article {
+    margin-top: 55px !important;
+  }
+  .article h1 {
+    font-size: 34px !important;
+  }
+  .item {
+    grid-template-columns: 1fr 25px !important;
+  }
+}
+
+/* ARTICLES · 2015 */
+.archive { margin-top: 58px; }
+.item h2 { font-size: 21px; line-height: 1.45; }
+.item .medium { margin-top: 9px; font-size: 10px; color: var(--muted); letter-spacing: .06em; }
+.item .medium strong { font-weight: 500; }
