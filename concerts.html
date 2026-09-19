@@ -1,1 +1,95 @@
-<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Música · Àngel Soro-Jiménez</title><link rel="stylesheet" href="styles.css"></head><body><header><a class="brand" href="index.html">Àngel Soro-Jiménez</a><nav><a href="biografia.html">BIOGRAFIA</a><a href="concerts.html">MÚSICA</a><a href="articles.html">ARTICLES</a><a href="reportatges.html">REPORTATGES</a><a href="entrevistes.html">ENTREVISTES</a><a href="investigacio.html">INVESTIGACIÓ</a><a href="contacte.html">CONTACTE</a></nav></header><main class="page"><h1>Música</h1><p class="intro">Aquesta secció està preparada per incorporar-hi el teu arxiu.</p></main></body></html>
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Música · Àngel Soro-Jiménez</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.year-tabs{display:flex;gap:34px;align-items:center;margin:0 0 42px;padding:0;border:0}
+.year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.year-tab.active{text-decoration:underline;text-underline-offset:5px}
+.year-tab:hover{text-decoration:underline;text-underline-offset:5px}
+.archive{display:none}
+.archive.active{display:block}
+.music-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid rgba(0,0,0,.14)}
+.music-date{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.music-item h2{font-size:1.05rem;font-weight:500;margin:0 0 12px}
+.music-item p{margin:0 0 10px;line-height:1.65}
+.music-item ul{margin:8px 0 0;padding-left:20px;line-height:1.65}
+.music-item li{margin-bottom:12px}
+@media(max-width:700px){.music-item{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">Àngel Soro-Jiménez</a>
+<nav>
+<a href="biografia.html">BIOGRAFIA</a><a href="concerts.html">MÚSICA</a><a href="articles.html">ARTICLES</a><a href="reportatges.html">REPORTATGES</a><a href="entrevistes.html">ENTREVISTES</a><a href="investigacio.html">INVESTIGACIÓ</a><a href="premsa.html">PREMSA</a><a href="contacte.html">CONTACTE</a>
+</nav>
+</header>
+<main class="page">
+<h1>Música</h1>
+<div class="year-tabs" aria-label="Anys de música">
+<button class="year-tab active" type="button" data-year="1996-1998">1996–1998</button>
+</div>
+<section class="archive active" id="1996-1998">
+<div class="year">1996–1998</div>
+
+<div class="music-item">
+<div class="music-date">1996</div>
+<div>
+<h2>Primer Premi Juvenil de Poesia “Federico García Lorca”</h2>
+<p>Aula Magna C.E. Lleida</p>
+</div>
+</div>
+
+<div class="music-item">
+<div class="music-date">1997</div>
+<div>
+<h2>Primer Premi Juvenil de Poesia “Rafael Alberti”</h2>
+<p>Aula Magna C.E. Lleida</p>
+</div>
+</div>
+
+<div class="music-item">
+<div class="music-date">1998</div>
+<div>
+<h2>Primer Premi de Poesia dels PPCC “Agustí Bernaus”</h2>
+<p>Auditori Enric Granados. Lleida</p>
+</div>
+</div>
+
+<div class="music-item">
+<div class="music-date">1998</div>
+<div>
+<h2>Publicació al llibre de poemes “Inèdits Ponentins”</h2>
+<p>Editorial Àgora.</p>
+</div>
+</div>
+
+<div class="music-item">
+<div class="music-date">1998</div>
+<div>
+<h2>Presentació del llibre i recital de poemes</h2>
+<ul>
+<li><strong>Sala Segona del Teatre de l’Escorxador.</strong><br>Poesia musicada pel guitarrista Miguel Hortigüela.<br>Organització: Centre de Belles Arts de Lleida.</li>
+<li><strong>Ateneu de Tàrrega.</strong><br>Recital de poemes i presentació dels autors.<br>Organització: Centre de Belles Arts de Lleida.</li>
+<li><strong>Biblioteca de la Universitat de Cervera.</strong><br>Lectura de poemes i presentació dels autors.<br>Organització: Centre de Belles Arts de Lleida.</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<script>
+document.querySelectorAll('.year-tab').forEach(function(button){
+  button.addEventListener('click', function(){
+    var year = this.dataset.year;
+    document.querySelectorAll('.year-tab').forEach(function(b){b.classList.toggle('active', b.dataset.year === year);});
+    document.querySelectorAll('.archive').forEach(function(section){section.classList.toggle('active', section.id === year);});
+    history.replaceState(null, '', '#' + year);
+  });
+});
+</script>
+</body>
+</html>
