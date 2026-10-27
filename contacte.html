@@ -6,8 +6,10 @@
 <title>Contacte · Àngel Soro-Jiménez</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-.contact-intro{max-width:680px;font-family:'Libre Baskerville',Georgia,serif;font-size:22px;line-height:1.75}
-.contact-note{max-width:680px;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;line-height:1.8;color:var(--muted)}
+.contact-cover{width:82%;height:190px;margin:35px auto 0;overflow:hidden}
+.contact-cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%;filter:grayscale(1)}
+.contact-space{height:260px}
+@media(max-width:900px){.contact-cover{width:92%;height:150px;margin-top:28px}.contact-space{height:220px}}
 </style>
 </head>
 <body>
@@ -24,10 +26,9 @@
 <a href="contacte.html">CONTACTE</a>
 </nav>
 </header>
-<main class="page">
-<h1>Contacte</h1>
-<p class="contact-intro">Per a consultes professionals, propostes de col·laboració o qüestions relacionades amb la música, l’escriptura i la recerca, aquest és l’espai de contacte.</p>
-<div class="contact-note">Per completar aquesta pàgina, cal afegir-hi l’adreça electrònica o el canal de contacte que vulguis fer públic.</div>
+<main>
+<div class="contact-cover"><img src="portada.png" alt="Muntanyes entre la boira"></div>
+<div class="contact-space" aria-hidden="true"></div>
 </main>
 <footer>© Àngel Soro-Jiménez</footer>
 </body>

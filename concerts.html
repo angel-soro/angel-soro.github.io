@@ -6,8 +6,8 @@
 <title>Música · Àngel Soro-Jiménez</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-.year-tabs{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin:0 0 42px;padding:0;border:0}
-.year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+.year-tabs{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;margin:0 0 42px;padding:0;border:0}
+.year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;gap:5px;line-height:1.35}.tab-kind{font-size:.68rem;letter-spacing:.1em;opacity:.68}
 .year-tab.active{text-decoration:underline;text-underline-offset:5px}
 .year-tab:hover{text-decoration:underline;text-underline-offset:5px}
 .archive{display:none}
@@ -31,12 +31,12 @@
 <main class="page">
 <h1>Música</h1>
 <div class="year-tabs" aria-label="Arxiu de poesia i música">
-<button class="year-tab active" type="button" data-year="poesia-1996-1998">1996–1998 · Poesia</button>
-<button class="year-tab" type="button" data-year="poesia-1999-2000">1999–2000 · Poesia</button>
-<button class="year-tab" type="button" data-year="musica-2000">2000 · Música</button>
-<button class="year-tab" type="button" data-year="2001">2001</button>
-<button class="year-tab" type="button" data-year="2002">2002</button>
-<button class="year-tab" type="button" data-year="2003">2003</button>
+<button class="year-tab active" type="button" data-year="poesia-1996-1998"><span>1996–1998</span><span class="tab-kind">Poesia</span></button>
+<button class="year-tab" type="button" data-year="poesia-1999-2000"><span>1999–2000</span><span class="tab-kind">Poesia</span></button>
+<button class="year-tab" type="button" data-year="musica-2000"><span>2000</span><span class="tab-kind">Música</span></button>
+<button class="year-tab" type="button" data-year="2001"><span>2001</span><span class="tab-kind">Música</span></button>
+<button class="year-tab" type="button" data-year="2002"><span>2002</span><span class="tab-kind">Música</span></button>
+<button class="year-tab" type="button" data-year="2003"><span>2003</span><span class="tab-kind">Música</span></button>
 </div>
 
 <section class="archive active" id="poesia-1996-1998">
@@ -45,9 +45,9 @@
 <div class="music-item"><div class="music-date">1997</div><div><h2>Primer Premi Juvenil de Poesia “Rafael Alberti”</h2><p>Aula Magna C.E. Lleida.</p></div></div>
 <div class="music-item"><div class="music-date">1998</div><div><h2>Primer Premi de Poesia dels PPCC “Agustí Bernaus”</h2><p>Auditori Enric Granados, Lleida.</p></div></div>
 <div class="music-item"><div class="music-date">1998</div><div><h2>Publicació al llibre de poemes “Inèdits Ponentins”</h2><p>Editorial Àgora.</p></div></div>
-<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes</h2><p><strong>Sala Segona del Teatre de l’Escorxador.</strong></p><p>Poesia musicada pel guitarrista Miguel Hortigüela.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
-<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes</h2><p><strong>Ateneu de Tàrrega.</strong></p><p>Recital de poemes i presentació dels autors.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
-<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes</h2><p><strong>Biblioteca de la Universitat de Cervera.</strong></p><p>Lectura de poemes i presentació dels autors.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
+<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes · Teatre de l’Escorxador</h2><p><strong>Sala Segona del Teatre de l’Escorxador.</strong></p><p>Poesia musicada pel guitarrista Miguel Hortigüela.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
+<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes · Ateneu de Tàrrega</h2><p><strong>Ateneu de Tàrrega.</strong></p><p>Recital de poemes i presentació dels autors.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
+<div class="music-item"><div class="music-date">1998</div><div><h2>Presentació del llibre i recital de poemes · Universitat de Cervera</h2><p><strong>Biblioteca de la Universitat de Cervera.</strong></p><p>Lectura de poemes i presentació dels autors.</p><p>Organització: Centre de Belles Arts de Lleida.</p></div></div>
 </section>
 
 <section class="archive" id="poesia-1999-2000">
