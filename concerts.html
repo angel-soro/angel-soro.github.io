@@ -7,9 +7,9 @@
 <link rel="stylesheet" href="styles.css">
 <style>
 .year-tabs{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;margin:0 0 42px;padding:0;border:0}
-.year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer;display:flex;flex-direction:column;align-items:flex-start;gap:5px;line-height:1.35}.tab-kind{font-size:.68rem;letter-spacing:.1em;opacity:.68}
-.year-tab.active{text-decoration:underline;text-underline-offset:5px}
-.year-tab:hover{text-decoration:underline;text-underline-offset:5px}
+.year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer;display:inline-block;line-height:1.35}
+.year-tab.active{text-decoration:none;font-weight:600}
+.year-tab:hover{text-decoration:none;opacity:.7}
 .archive{display:none}
 .archive.active{display:block}
 .music-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:0 0 30px;margin:0 0 30px;border-bottom:1px solid rgba(0,0,0,.14)}
@@ -31,16 +31,16 @@
 <main class="page">
 <h1>Música</h1>
 <div class="year-tabs" aria-label="Arxiu de poesia i música">
-<button class="year-tab active" type="button" data-year="poesia-1996-1998"><span>1996–1998</span><span class="tab-kind">Poesia</span></button>
-<button class="year-tab" type="button" data-year="poesia-1999-2000"><span>1999–2000</span><span class="tab-kind">Poesia</span></button>
-<button class="year-tab" type="button" data-year="musica-2000"><span>2000</span><span class="tab-kind">Música</span></button>
-<button class="year-tab" type="button" data-year="2001"><span>2001</span><span class="tab-kind">Música</span></button>
-<button class="year-tab" type="button" data-year="2002"><span>2002</span><span class="tab-kind">Música</span></button>
-<button class="year-tab" type="button" data-year="2003"><span>2003</span><span class="tab-kind">Música</span></button>
+<button class="year-tab active" type="button" data-year="poesia-1996-1998"><span>1996–1998</span></button>
+<button class="year-tab" type="button" data-year="poesia-1999-2000"><span>1999–2000</span></button>
+<button class="year-tab" type="button" data-year="musica-2000"><span>2000</span></button>
+<button class="year-tab" type="button" data-year="2001"><span>2001</span></button>
+<button class="year-tab" type="button" data-year="2002"><span>2002</span></button>
+<button class="year-tab" type="button" data-year="2003"><span>2003</span></button>
 </div>
 
 <section class="archive active" id="poesia-1996-1998">
-<div class="year">Poesia · 1996–1998</div>
+<div class="year">1996–1998</div>
 <div class="music-item"><div class="music-date">1996</div><div><h2>Primer Premi Juvenil de Poesia “Federico García Lorca”</h2><p>Aula Magna C.E. Lleida.</p></div></div>
 <div class="music-item"><div class="music-date">1997</div><div><h2>Primer Premi Juvenil de Poesia “Rafael Alberti”</h2><p>Aula Magna C.E. Lleida.</p></div></div>
 <div class="music-item"><div class="music-date">1998</div><div><h2>Primer Premi de Poesia dels PPCC “Agustí Bernaus”</h2><p>Auditori Enric Granados, Lleida.</p></div></div>
@@ -51,7 +51,7 @@
 </section>
 
 <section class="archive" id="poesia-1999-2000">
-<div class="year">Poesia · 1999–2000</div>
+<div class="year">1999–2000</div>
 <div class="music-item"><div class="music-date">1999</div><div><h2>Primer recital de presentació individual “Poesia combativa”</h2><p>Local Social de la Plaça del Clot de Lleida.</p><p>Poesia musicada per:</p><ul><li>Maria Mora (flauta travessera).</li><li>Jessica Farrè (guitarra clàssica).</li><li>Carmè Garrigó (percussió).</li></ul><p>Organització: l’autor i el Local Social del Clot de Lleida.</p></div></div>
 <div class="music-item"><div class="music-date">1999</div><div><h2>Recital de poesia musicada i teatre “Pensamiento disidente”</h2><p>Sala Primera del Teatre de l’Escorxador de Lleida.</p><p>Poesia musicada per:</p><ul><li>Miguel Hortigüela (guitarra clàssica).</li><li>Carmè Garrigó (marimba).</li><li>Inès Paules (clarinet).</li><li>Maria Mora (flauta travessera).</li><li>Isabel Puig (acordió i gralla).</li><li>Jesús Soro (actor).</li><li>Jordi Paris (actor).</li><li>Marc Terès (il·luminació).</li><li>Gerard Juanos (logística).</li></ul><p>Organització, guió i poesia: Àngel Soro.</p></div></div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Recital de poesia intimista “Aixequem el puny”</h2><p>Sala Naúsica de l’Ateneu Popular de Ponent de Lleida.</p><p>Recital de poesia mà a mà amb Miguel Hortigüela (guitarra clàssica).</p><p>Organització, guió i poesia: Àngel Soro.</p></div></div>
@@ -60,14 +60,14 @@
 </section>
 
 <section class="archive" id="musica-2000">
-<div class="year">Música · 2000</div>
+<div class="year">2000</div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Primer concert com a cantautor, “Pensativa”</h2><p>Pati de les Heures de la Universitat de Lleida.</p><p>Àngel Soro i Miquel del Roig.</p><p>Organitza: Plataforma per la Universitat Pública.</p></div></div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Concert de recolzament als moviments socials</h2><p>Sala Nomon de Mollerussa.</p><p>Àngel Soro i Euria Ederra (veu femenina).</p><p>Organitza: Rauxa.</p></div></div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Recital de poesia “Trobada per la llengua”</h2><p>Plaça del Terrall de les Borges Blanques.</p><p>Organitza: col·lectiu l’Espenta.</p></div></div>
 </section>
 
 <section class="archive" id="2001">
-<div class="year">Música · 2001</div>
+<div class="year">2001</div>
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert Festa Solidària</h2><p>Centre de Treball Social de la Universitat de Lleida.</p><p>Organitza: Consell de l’Estudiantat de la Facultat de Treball Social.</p></div></div>
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert de Sant Jordi</h2><p>Teatre de la Panera de Castellserà.</p><p>Organitza: Regidoria de Cultura. Ajuntament de Castellserà.</p></div></div>
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert a l’entrega dels Premis “Manuel de Pedrolo”</h2><p>Cafè del Teatre de l’Escorxador.</p><p>Organitza: Ateneu Independentista de Ponent.</p></div></div>
@@ -80,7 +80,7 @@
 </section>
 
 <section class="archive" id="2002">
-<div class="year">Música · 2002</div>
+<div class="year">2002</div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert a les festes del Clot</h2><p>Plaça del Clot de les Granotes de Lleida.</p><p>Àngel Soro / Euria Ederra / Hèctor Guiu / Sergi Vila.</p><p>Organitza: AAVV de Veïns i Veïnes del Clot.</p></div></div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert del 8 de març, Dia de la Dona</h2><p>Sala d’actes de l’Ajuntament de Mollerussa.</p><p>Àngel Soro i Euria Ederra, concert i recital poètic.</p><p>Organitza: l’Espenta i Ajuntament de Mollerussa.</p></div></div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert a la Calçotada Popular d’Igualada</h2><p>Pavelló de les Comes d’Igualada.</p><p>Àngel Soro i Euria Ederra / Feliu Ventura / La Carrau.</p><p>Organitza: Jimmy Jazz.</p></div></div>
@@ -104,7 +104,7 @@
 </section>
 
 <section class="archive" id="2003">
-<div class="year">Música · 2003</div>
+<div class="year">2003</div>
 <div class="music-item"><div class="music-date">2003</div><div><h2>Enregistrament i coordinació del disc “Efecte Espiral”</h2><p>Coordinadora Espiral i Bullanga Records, Vilafranca del Penedès.</p><p>El disc inclou el primer poema musicat de Manuel de Pedrolo.</p><p>Música i poemes d’Àngel Soro, Efecte Espiral, Bullanga Records.</p><p>Acompanyat per:</p><ul><li>Euria Ederra (veu femenina), Lleida.</li><li>Hèctor Guiu (violí), Lleida.</li><li>Josep Mesalles (saxo), Fraga.</li><li>Fèlix Loizu (teclat), Almacelles.</li><li>Jordi Martos (baix), Vilafranca del Penedès.</li></ul></div></div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert de presentació del disc “Efecte Espiral”</h2><p>Cafè del Teatre de l’Escorxador de Lleida.</p><p>Amb la col·laboració de:</p><ul><li>Euria Ederra (veu femenina).</li><li>Hèctor Guiu (violí).</li><li>Josep Mesalles (saxo).</li><li>Sergi Vila (guitarra elèctrica).</li><li>Jordi Paris (samplers).</li></ul><p>Concert organitzat per la Coordinadora Espiral amb la col·laboració de Bullanga Records, Plataforma en defensa de l’Ebre, Plataforma per Cuba, CSC-Intersindical, Coordinadora d’Estudiants dels Països Catalans, l’Espenta, Endavant, Casals Jaume I de la Franja de Ponent, Acció Cultural del País Valencià, Revers, Rauxa, Tavernes Catalanes Populars la Falcata, Sarri, Jimmy Jazz, Carrasclet i Via Fora!, Plataforma per la Globalització de Resistències, Ateneu la Maixanta, Plataforma pel 0,7, Regidoria de Cultura de l’Ajuntament de Lleida i Departament de Cultura de la Generalitat de Catalunya.</p></div></div>
 </section>
