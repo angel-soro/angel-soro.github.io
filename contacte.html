@@ -8,7 +8,14 @@
 <style>
 .contact-cover{width:82%;height:190px;margin:35px auto 0;overflow:hidden}
 .contact-cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 58%;filter:grayscale(1)}
-.contact-space{height:260px}
+.contact-form{width:min(620px,82%);margin:42px auto 90px}
+.contact-form label{display:block;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}
+.contact-form input,.contact-form textarea{box-sizing:border-box;width:100%;font:inherit;font-size:.95rem;padding:12px 13px;border:1px solid rgba(0,0,0,.25);background:transparent;margin:0 0 22px;border-radius:0}
+.contact-form textarea{min-height:150px;resize:vertical}
+.contact-form button{font:inherit;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;background:transparent;border:1px solid currentColor;padding:12px 22px;cursor:pointer}
+.contact-form button:hover{opacity:.65}
+.contact-note{font-size:.78rem;opacity:.65;margin-top:12px}
+.contact-space{height:35px}
 @media(max-width:900px){.contact-cover{width:92%;height:150px;margin-top:28px}.contact-space{height:220px}}
 </style>
 </head>
@@ -29,6 +36,14 @@
 <main>
 <div class="contact-cover"><img src="portada.png" alt="Muntanyes entre la boira"></div>
 <div class="contact-space" aria-hidden="true"></div>
+<form class="contact-form" action="https://formspree.io/f/REEMPLAZA_AQUEST_ID" method="POST">
+  <label for="email">Correu electrònic</label>
+  <input id="email" name="email" type="email" autocomplete="email" required placeholder="El teu correu electrònic">
+  <label for="message">Comentari</label>
+  <textarea id="message" name="message" required placeholder="Escriu aquí el teu comentari"></textarea>
+  <button type="submit">Enviar</button>
+  <p class="contact-note">El correu electrònic s’utilitzarà només per poder respondre el missatge.</p>
+</form>
 </main>
 <footer>© Àngel Soro-Jiménez</footer>
 </body>

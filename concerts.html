@@ -9,6 +9,7 @@
 .year-tabs{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;margin:0 0 42px;padding:0;border:0}
 .year-tab{font:inherit;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:inherit;background:none;border:0;padding:0;cursor:pointer;display:inline-block;line-height:1.35}
 .year-tab.active{text-decoration:none;font-weight:600}
+.year-tab small{display:block;font-size:.62rem;letter-spacing:.04em;text-transform:none;font-weight:400;margin-top:3px}
 .year-tab:hover{text-decoration:none;opacity:.7}
 .archive{display:none}
 .archive.active{display:block}
@@ -31,12 +32,19 @@
 <main class="page">
 <h1>Música</h1>
 <div class="year-tabs" aria-label="Arxiu de poesia i música">
-<button class="year-tab active" type="button" data-year="poesia-1996-1998"><span>1996–1998</span></button>
-<button class="year-tab" type="button" data-year="poesia-1999-2000"><span>1999–2000</span></button>
-<button class="year-tab" type="button" data-year="musica-2000"><span>2000</span></button>
-<button class="year-tab" type="button" data-year="2001"><span>2001</span></button>
+<button class="year-tab active" type="button" data-year="poesia-1996-1998"><span>1996–1998</span><small>Poesia</small></button>
+<button class="year-tab" type="button" data-year="poesia-1999-2000"><span>1999–2000</span><small>Poesia</small></button>
+<button class="year-tab" type="button" data-year="2000-2001"><span>2000–2001</span></button>
 <button class="year-tab" type="button" data-year="2002"><span>2002</span></button>
 <button class="year-tab" type="button" data-year="2003"><span>2003</span></button>
+<button class="year-tab" type="button" data-year="2004"><span>2004</span></button>
+<button class="year-tab" type="button" data-year="2005"><span>2005</span></button>
+<button class="year-tab" type="button" data-year="2006"><span>2006</span></button>
+<button class="year-tab" type="button" data-year="2007"><span>2007</span></button>
+<button class="year-tab" type="button" data-year="2008"><span>2008</span></button>
+<button class="year-tab" type="button" data-year="2009-2011"><span>2009–2011</span></button>
+<button class="year-tab" type="button" data-year="2012-2013"><span>2012–2013</span></button>
+<button class="year-tab" type="button" data-year="2014"><span>2014</span></button>
 </div>
 
 <section class="archive active" id="poesia-1996-1998">
@@ -59,15 +67,14 @@
 <div class="music-item"><div class="music-date">2000</div><div><h2>Recital de poesia “Seguem cadenes”</h2><p>Sala del Jutjat de Pau de les Borges Blanques.</p><p>Poesies d’Àngel Soro i música d’Hector Guiu (violí).</p><p>Organitza: Revers.</p></div></div>
 </section>
 
-<section class="archive" id="musica-2000">
-<div class="year">2000</div>
+<section class="archive" id="2000-2001"><div class="year">2000–2001</div>
+
+
 <div class="music-item"><div class="music-date">2000</div><div><h2>Primer concert com a cantautor, “Pensativa”</h2><p>Pati de les Heures de la Universitat de Lleida.</p><p>Àngel Soro i Miquel del Roig.</p><p>Organitza: Plataforma per la Universitat Pública.</p></div></div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Concert de recolzament als moviments socials</h2><p>Sala Nomon de Mollerussa.</p><p>Àngel Soro i Euria Ederra (veu femenina).</p><p>Organitza: Rauxa.</p></div></div>
 <div class="music-item"><div class="music-date">2000</div><div><h2>Recital de poesia “Trobada per la llengua”</h2><p>Plaça del Terrall de les Borges Blanques.</p><p>Organitza: col·lectiu l’Espenta.</p></div></div>
-</section>
 
-<section class="archive" id="2001">
-<div class="year">2001</div>
+
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert Festa Solidària</h2><p>Centre de Treball Social de la Universitat de Lleida.</p><p>Organitza: Consell de l’Estudiantat de la Facultat de Treball Social.</p></div></div>
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert de Sant Jordi</h2><p>Teatre de la Panera de Castellserà.</p><p>Organitza: Regidoria de Cultura. Ajuntament de Castellserà.</p></div></div>
 <div class="music-item"><div class="music-date">2001</div><div><h2>Concert a l’entrega dels Premis “Manuel de Pedrolo”</h2><p>Cafè del Teatre de l’Escorxador.</p><p>Organitza: Ateneu Independentista de Ponent.</p></div></div>
@@ -101,12 +108,93 @@
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert a l’Aniversari del Sarri</h2><p>Bar Sarri de Reus.</p><p>Concert intimista amb Euria Ederra (veu femenina).</p><p>Organitza: Bar Sarri.</p></div></div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Concert de la nit de Sant Antoni</h2><p>Teatre Municipal de Mequinensa.</p><p>Concert electroacústic al teatre.</p><p>Organitza: Ajuntament de Mequinensa i Casal Jaume I.</p></div></div>
 <div class="music-item"><div class="music-date">2002</div><div><h2>Inauguració del Casal Jaume I de Fraga</h2><p>Casal Jaume I de Fraga i Penya Blaugrana.</p><p>Àngel Soro i Euria Ederra / Grallers de l’Ebre / Coral de Fraga.</p><p>Organitza: Casal Jaume I de Fraga i Acció Cultural del País Valencià.</p></div></div>
+
+<div class="music-item"><div class="music-date">2002</div><div><h2>Enregistrament i coordinació del disc “Efecte Espiral”</h2><p>Coordinadora Espiral i Bullanga Records, Vilafranca del Penedès.</p><p>El disc inclou el primer poema musicat de Manuel de Pedrolo.</p><p>Música i poemes d’Àngel Soro, Efecte Espiral, Bullanga Records.</p><ul><li>Euria Ederra (veu femenina), Lleida.</li><li>Hèctor Guiu (violí), Lleida.</li><li>Josep Mesalles (saxo), Fraga.</li><li>Fèlix Loizu (teclat), Almacelles.</li><li>Jordi Martos (baix), Vilafranca del Penedès.</li></ul></div></div>
+<div class="music-item"><div class="music-date">2002</div><div><h2>Concert de presentació del disc “Efecte Espiral”</h2><p>Cafè del Teatre de l’Escorxador de Lleida.</p><p>Concert organitzat per la Coordinadora Espiral.</p><p>Amb la col·laboració de Bullanga Records, Plataforma en defensa de l’Ebre, Plataforma per Cuba, CSC-Intersindical, Coordinadora d’Estudiants dels Països Catalans, l’Espenta, Endavant, Casals Jaume I de la Franja de Ponent, Acció Cultural del País Valencià, Revers, Rauxa, Tavernes Catalanes Populars la Falcata, Sarri, Jimmy Jazz, Carrasclet i Via Fora!, Plataforma per la Globalització de Resistències, Ateneu la Maixanta, Plataforma pel 0,7, Regidoria de Cultura de l’Ajuntament de Lleida i Departament de Cultura de la Generalitat de Catalunya.</p><ul><li>Euria Ederra (veu femenina).</li><li>Hèctor Guiu (violí).</li><li>Josep Mesalles (saxo).</li><li>Sergi Vila (guitarra elèctrica).</li><li>Jordi Paris (samplers).</li></ul></div></div>
 </section>
 
-<section class="archive" id="2003">
-<div class="year">2003</div>
-<div class="music-item"><div class="music-date">2003</div><div><h2>Enregistrament i coordinació del disc “Efecte Espiral”</h2><p>Coordinadora Espiral i Bullanga Records, Vilafranca del Penedès.</p><p>El disc inclou el primer poema musicat de Manuel de Pedrolo.</p><p>Música i poemes d’Àngel Soro, Efecte Espiral, Bullanga Records.</p><p>Acompanyat per:</p><ul><li>Euria Ederra (veu femenina), Lleida.</li><li>Hèctor Guiu (violí), Lleida.</li><li>Josep Mesalles (saxo), Fraga.</li><li>Fèlix Loizu (teclat), Almacelles.</li><li>Jordi Martos (baix), Vilafranca del Penedès.</li></ul></div></div>
-<div class="music-item"><div class="music-date">2002</div><div><h2>Concert de presentació del disc “Efecte Espiral”</h2><p>Cafè del Teatre de l’Escorxador de Lleida.</p><p>Amb la col·laboració de:</p><ul><li>Euria Ederra (veu femenina).</li><li>Hèctor Guiu (violí).</li><li>Josep Mesalles (saxo).</li><li>Sergi Vila (guitarra elèctrica).</li><li>Jordi Paris (samplers).</li></ul><p>Concert organitzat per la Coordinadora Espiral amb la col·laboració de Bullanga Records, Plataforma en defensa de l’Ebre, Plataforma per Cuba, CSC-Intersindical, Coordinadora d’Estudiants dels Països Catalans, l’Espenta, Endavant, Casals Jaume I de la Franja de Ponent, Acció Cultural del País Valencià, Revers, Rauxa, Tavernes Catalanes Populars la Falcata, Sarri, Jimmy Jazz, Carrasclet i Via Fora!, Plataforma per la Globalització de Resistències, Ateneu la Maixanta, Plataforma pel 0,7, Regidoria de Cultura de l’Ajuntament de Lleida i Departament de Cultura de la Generalitat de Catalunya.</p></div></div>
+<section class="archive" id="2003"><div class="year">2003</div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert solidari amb el Poble cubà</h2><p>Centre Cívic de Balàfia de Lleida.</p><p>Concert d’Àngel Soro i Euria Ederra / Antoni Garcia.</p><p>Organitza: Regidoria de participació ciutadana i Plataforma per Cuba.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert a l’Euskal Jaia de Lleida</h2><p>Universitat d’Agrònoms de la Universitat de Lleida.</p><p>Àngel Soro: recital de poesia i cançons.</p><p>Organitza: Euskal Jaia.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert i xerrada des de la Franja de Ponent</h2><p>Jazz Cava de Vic.</p><p>Concert d’Àngel Soro i Euria Ederra. Xerrada de Joaquim Monclús.</p><p>Organitza: Joventuts Republicanes i Jazz Cava.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert de l’Onze de setembre a Girona</h2><p>Casc antic de la ciutat de Girona.</p><p>Organitza: Comissió Onze de Setembre de Girona.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert en defensa de l’Aigua barreig</h2><p>Àrea de Natura i Kavern de Mequinensa.</p><p>Organitza: Plataforma Ecologista Estatal.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert de la Marató de TV3 de Catalunya</h2><p>Plaça dels Amics de Lleida.</p><p>Concert d’Àngel Soro i Euria Ederra / Grup Boira / Casa d’Andalusia.</p><p>Organitza: Penya Barcelonista de Lleida i província.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert acústic Correllengua del Vallès</h2><p>Sopar popular al centre de la vila.</p><p>Organitza: Ajuntament de Cerdanyola del Vallès i la Verema.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert acústic Correllengua del Vallès</h2><p>Sopar popular del Casal de Mollet.</p><p>Organitza: Coordinadora d’Associacions per la Llengua.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Recital del Centre de Cooperació Internacional</h2><p>Plaça Sant Joan de Lleida.</p><p>Organitza: Centre de Cooperació i Universitat de Lleida.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert de comiat de la Taverna Popular Sarri</h2><p>Bar Sarri de Reus.</p><p>Organitza: Bar Sarri i Coordinadora Espiral Baix Camp.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Festival del col·lectiu d’artistes INOID</h2><p>Sala del Castell de Girona.</p><p>Organitza: Col·lectiu d’artistes INOID.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Jornada de la Plataforma en Defensa de l’Ebre</h2><p>Teatre Municipal de Mequinensa.</p><p>Organitza: Ajuntament de Mequinensa.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Festes Majors de la Vila de Seròs</h2><p>Casal de Seròs.</p><p>Concert d’Àngel Soro i Euria Ederra / recital.</p><p>Organitza: Ajuntament de Seròs.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert per la diversitat</h2><p>Plaça de l’Ajuntament de Vinaròs.</p><p>Organitza: Escola d’Adults Llibertat i Ajuntament de Vinaròs.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert solidari amb els joves de Torà</h2><p>Plaça de l’Ajuntament de Torà.</p><p>Concert d’Àngel Soro, Euria Ederra i Txetxu Teixeiro (percussió).</p><p>Organitza: Joventuts de Torà i Plataforma solidària.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert de la Setmana Cultural Catalana</h2><p>Ermita d’Ulldecona.</p><p>Concert d’Àngel Soro amb Euria Ederra (veu femenina), Hèctor Guiu (violí) i Txetxu Teixeiro (percussió).</p><p>Organitza: Regidoria de Cultura, Ajuntament d’Ulldecona.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert Espiral a Igualada</h2><p>Taverna Popular Jimmy Jazz.</p><p>Concert d’Àngel Soro amb Euria Ederra (veu femenina), Hèctor Guiu (violí) i Txetxu Teixeiro (percussió).</p><p>Organitza: Taverna Popular Jimmy Jazz.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert solidari amb els joves de Torà</h2><p>Plaça Sitjar de Castellserà.</p><p>Concert d’Àngel Soro amb Euria Ederra (veu femenina), Hèctor Guiu (violí) i Txetxu Teixeiro (percussió).</p><p>Organitza: Ajuntament de Castellserà i Plataforma solidària.</p></div></div>
+<div class="music-item"><div class="music-date">2003</div><div><h2>Concert al Garrofa Rock de les Terres de l’Ebre</h2><p>Plaça de la Mera d’Ulldecona.</p><p>Àngel Soro i Euria Ederra / Sex Museum / Deshechos.</p><p>Organitza: Col·lectiu de Joves “Amics”.</p></div></div>
+</section>
+<section class="archive" id="2004"><div class="year">2004</div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Visita i participació Memorial 1981, Irlanda del Nord</h2><p>Musicació de poemes de Robert Gerald Sands.</p><p>Milltown Cemetery, Belfast, Northern Ireland.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Concert per la llengua</h2><p>Teatre d’Horta Guinardó, Barcelona.</p><p>Àngel Soro / Euria Ederra / Hèctor Guiu.</p><p>Organitza: Plataforma per la Llengua Barcelona.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Concert en memòria de Guillem Agulló</h2><p>Espai Alacantí, Alacant, País Valencià.</p><p>Organitza: Plataforma d’Alacant.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Concert de cantautors catalans</h2><p>Centre de Lectura de Reus, Baix Camp.</p><p>Organitza: Centre de Lectura, Casal Despertaferro.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Recital poètic i concert jove</h2><p>Plaça de la vila, Capellades.</p><p>Organitza: Plataforma per la Llengua Anoia.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Lectura del manifest “Lo riu es vida”</h2><p>Marge esquerre del riu Segre, Lleida.</p><p>Organitza: Plataforma en defensa de l’Ebre.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Teatre i concert en homenatge a Manuel de Pedrolo</h2><p>Sala del Castell de Bellpuig.</p><p>Aula de Teatre de Bellpuig i Àngel Soro / Adelais de Pedrolo.</p><p>Organitza: Aula de Teatre i Ajuntament de Bellpuig.</p></div></div>
+<div class="music-item"><div class="music-date">2004</div><div><h2>Festa del llibre gegant d’Alpicat</h2><p>Sala d’actes de l’Ajuntament d’Alpicat.</p><p>Concert i lectura de poemes de poetes catalans.</p><p>Organitza: Ajuntament d’Alpicat.</p></div></div>
+</section>
+<section class="archive" id="2005"><div class="year">2005</div>
+<div class="music-item"><div class="music-date">2005</div><div><h2>Membre fundador de l’Associació Cultural l’Encenall</h2><p>Coordinador de la secció cultural i esportiva.</p></div></div>
+<div class="music-item"><div class="music-date">2005</div><div><h2>Concert de cultura tradicional i popular catalana</h2><p>Ermita de Vilanova de la Barca, Lleida.</p><p>Concert acústic i lectura de poemes de Pere Quart.</p><p>Organitza: Consell Comarcal del Segrià.</p></div></div>
+<div class="music-item"><div class="music-date">2005</div><div><h2>Concert per la Marató de TV3</h2><p>Pavelló de Vilanova de Bellpuig.</p><p>Presentació de la cançó “Sem Terra”.</p><p>Organitza: Associació de Dones de Vilanova de Bellpuig.</p></div></div>
+<div class="music-item"><div class="music-date">2005</div><div><h2>Coordinació de trobades de senderisme</h2><p>Franja de Ponent, Vall d’Añisclo i Val d’Aran.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+<div class="music-item"><div class="music-date">2005</div><div><h2>Membre convidat a la trobada de llengües</h2><p>Universitat de Vitoria-Gasteiz, Euskadi.</p><p>Musicació de poemes de Gabriel Aresti.</p><p>Organitza: Departament de Lletres de la Universitat de Gasteiz.</p></div></div>
+</section>
+<section class="archive" id="2006"><div class="year">2006</div>
+<div class="music-item"><div class="music-date">2006</div><div><h2>Membre fundador de la Revista Cultural Lo Ribot</h2><p>Redactor i dissenyador de la revista.</p></div></div>
+<div class="music-item"><div class="music-date">2006</div><div><h2>Concert de l’Onze de setembre, Diada Nacional</h2><p>Monument a les quatre barres, Cervera.</p><p>Organitza: Comissió 11 de setembre.</p></div></div>
+<div class="music-item"><div class="music-date">2006</div><div><h2>Coordinador de la gala del Premi Encenall 2006</h2><p>Atorgament del Premi a Manel Maria Carbonell.</p><p>Darrer pintor impressionista mediterrani amb vida.</p><p>Disseny i producció audiovisual.</p></div></div>
+<div class="music-item"><div class="music-date">2006</div><div><h2>Concert en defensa de la llengua</h2><p>Universitat de Cervera.</p><p>Organitza: Coordinadora d’Associacions per la Llengua.</p></div></div>
+</section>
+<section class="archive" id="2007"><div class="year">2007</div>
+<div class="music-item"><div class="music-date">2007</div><div><h2>Coordinador de la trobada Catalunya-Hongria</h2><p>Museu Nacional de Budapest, Hongria.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+<div class="music-item"><div class="music-date">2007</div><div><h2>Concert de l’Onze de setembre, Diada Nacional</h2><p>Plaça de l’Ajuntament, Alguaire.</p><p>Organitza: Ajuntament d’Alguaire.</p></div></div>
+<div class="music-item"><div class="music-date">2007</div><div><h2>Membre fundador del Premi Encenall a la labor cultural o social</h2><p>Entrevista al jugador del F.C. Barcelona, Oleguer Presas Renom.</p><p>Instal·lacions del Camp Nou, Barcelona.</p><p>Presentador de la gala d’atorgament del Premi Encenall 2006.</p></div></div>
+<div class="music-item"><div class="music-date">2007</div><div><h2>Organització del Torneig pels nens i nenes saharauis</h2><p>Coordinador dels actes de solidaritat amb els infants.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+</section>
+<section class="archive" id="2008"><div class="year">2008</div>
+<div class="music-item"><div class="music-date">2008</div><div><h2>Presentació i musicació de poemes d’Erich Freud</h2><p>Aproximació a la literatura i poesia alemanya.</p></div></div>
+<div class="music-item"><div class="music-date">2008</div><div><h2>Concert Homenatge a Manuel de Pedrolo</h2><p>Departament de Cultura de la Generalitat, Lleida.</p><p>Àngel Soro canta Manuel de Pedrolo.</p><p>Organitza: Generalitat de Catalunya.</p></div></div>
+<div class="music-item"><div class="music-date">2008</div><div><h2>Coordinador de la gala d’atorgament del Premi Encenall 2008</h2><p>Atorgament del Premi a Mikel Laboa Mancisidor.</p><p>Músic i compositor universal i basc.</p><p>Disseny i producció de l’audiovisual sobre Mikel Laboa.</p><p>Redactor dels articles de premsa i de l’anuari 2008.</p><p>Organitza: Associació Cultural l’Encenall i Lo Ribot.</p></div></div>
+<div class="music-item"><div class="music-date">2008</div><div><h2>Organització del Torneig Solidari amb l’Associació Defensa dels Animals</h2><p>Coordinador d’activitats esportives i culturals.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+</section>
+<section class="archive" id="2009-2011"><div class="year">2009–2011</div>
+<div class="music-item"><div class="music-date">2009</div><div><h2>2009 · Recopilació de poemes musicats</h2><p>Manuel de Pedrolo, Maria Mercè Marçal, Robert Gerald Sands i Erich Freud.</p></div></div>
+<div class="music-item"><div class="music-date">2009</div><div><h2>2009 · Organització del Torneig Solidari amb els nens palestins acollits</h2><p>Coordinador d’activitats de suport.</p><p>Enllaç de premsa i encarregat de difusió.</p></div></div>
+<div class="music-item"><div class="music-date">2009</div><div><h2>2009 · Coordinador de la gala d’atorgament del Premi Encenall 2009</h2><p>Atorgament del Premi a Andrés Rodríguez, periodista i crític musical de La Mañana.</p><p>Entrevista al premiat, redactor de l’anuari i enllaç de premsa.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+<div class="music-item"><div class="music-date">2009</div><div><h2>2009 · Concert Homenatge a Mikel Laboa</h2><p>Recital poètic, aproximació a l’autor i cançons de Laboa.</p><p>Àngel Soro i Hèctor Guiu.</p><p>Organitza: Associació Cultural l’Encenall.</p></div></div>
+<div class="music-item"><div class="music-date">2010</div><div><h2>2010 · Fundació de la Junta de l’AAVV del Clot de les Granotes</h2><p>Membre gestor de les Festes Majors.</p></div></div>
+<div class="music-item"><div class="music-date">2010</div><div><h2>2010 · Organització Premi Encenall 2010, Arcadi Oliveres</h2><p>Suspès per força major.</p></div></div>
+<div class="music-item"><div class="music-date">2010</div><div><h2>2010 · Trobada cultural internacional</h2><p>Músiques del món.</p></div></div>
+<div class="music-item"><div class="music-date">2011</div><div><h2>2011 · Creació de l’obra Oda a les esquerdes</h2><p>Poemari intimista.</p></div></div>
+</section>
+<section class="archive" id="2012-2013"><div class="year">2012–2013</div>
+<div class="music-item"><div class="music-date">2012</div><div><h2>2012 · Creació de l’obra A non domino</h2><p>Poesia intimista.</p></div></div>
+<div class="music-item"><div class="music-date">2012</div><div><h2>2012 · Membre col·laborador de la Comissió de Festes del carrer Mozart, barri de Gràcia, Barcelona</h2><p>Premis en els guarniments de carrers: premi a la innovació, sostres, portada, reciclatge i programa.</p><p>Premi Segon de la Vila de Gràcia.</p></div></div>
+<div class="music-item"><div class="music-date">2012</div><div><h2>2012 · Fantasia Mineral, audiovisual i música</h2><p>Sala Magna de l’Institut d’Estudis Ilerdencs, Lleida.</p><p>Audiovisuals de Casimir Jover i música d’Àngel Soro.</p><p>Organitza: Club Mensa.</p></div></div>
+<div class="music-item"><div class="music-date">2013</div><div><h2>2013 · La Coordinadora Espiral s’uneix a Catalonian Music Works</h2><p>Febrer: incorporació. Març/juny: proves d’enregistrament a la seu de Catalonian Music Works.</p><p>Juny: cançó “Taksim benimle kal”, solidaritat amb Turquia.</p></div></div>
+<div class="music-item"><div class="music-date">2013</div><div><h2>2013 · Enregistrament de la cançó “Homenatge”</h2><p>Juny/juliol.</p><p>Dedicada al filòleg fragatí Josep Galán, desaparegut el 2005.</p></div></div>
+<div class="music-item"><div class="music-date">2013</div><div><h2>2013 · Membre col·laborador de la Comissió de Festes del carrer Mozart, Gràcia, Barcelona</h2><p>Premis en els guarniments de carrers.</p><p>Premi Tercer de la Vila de Gràcia.</p></div></div>
+<div class="music-item"><div class="music-date">2013</div><div><h2>2013 · Direcció i organització del videoclip “Guanyarem”</h2><p>Juliol/setembre. Primer poema musicat de l’escriptor i activista de Reus, Josep Maria Prous i Vila.</p><p>Música, instrumentació i codirecció del videoclip. Càmera, muntatge i codirecció a càrrec del fotògraf Casimir Jover.</p><p>Tècnic de so de Catalonian Music Works: Joel Marc Romero. Veu femenina: Garbiñe Romero.</p><p>Actors: Secció d’Atletisme de l’Associació Cultural l’Encenall.</p><p>Setembre: cançó i videoclip “Guanyarem!”.</p></div></div>
+<div class="music-item"><div class="music-date">2013</div><div><h2>2013 · Preparació i enregistrament de cançons del disc 2014</h2><p>Abril/desembre.</p></div></div>
+</section>
+<section class="archive" id="2014"><div class="year">2014</div>
+<div class="music-item"><div class="music-date">2014</div><div><h2>Gener–setembre · Enregistrament del disc Homenatge 1.0</h2><p>Tècnic de so: Joel Marc Romero.</p><p>Baix: Josep Mesalles.</p><p>Veu femenina: Garbiñe Romero.</p><p>Veu femenina: Zulma Ramírez.</p><p>Guitarra a “Rompe las Cadenas”: José Ángel Prieto.</p><p>Intro a “Només som Xifres”: Albert Salvat DJ OGT.</p><p>Veu femenina a “V de Vallecas”: Euria Ederra.</p><p>Traduccions a l’eusquera: Olatz Ruiz de Azua.</p><p>Música i textos: Àngel Soro.</p></div></div>
+<div class="music-item"><div class="music-date">2014</div><div><h2>1 d’abril · Inici de la campanya de mecenatge</h2><p>Ruta de promoció Lleida–Reus–Barcelona–Girona–Catalunya Nord.</p><p>54 mecenes a la campanya en línia.</p></div></div>
+<div class="music-item"><div class="music-date">2014</div><div><h2>Agost · “Jardí encantat” al carrer Mozart</h2><p>Participació de membres de la Coordinadora Espiral a les Festes de Gràcia.</p></div></div>
+<div class="music-item"><div class="music-date">2014</div><div><h2>30 d’octubre · Presentació d’Homenatge 1.0</h2><p>Nou disc d’Àngel Soro.</p><p>Cançons: Omenaldia; Guanyarem (Josep Maria Prous i Vila); Tres voltes rebels (Maria Mercè Marçal, Manuel de Pedrolo); Un pilot de catalans (Víctor Mora i Alzinelles); Homenatge (Josep Galán); Rompe las cadenas; Poliki poliki; 300 anys (a ateneus i casals); No ens poden fer mal (a Salvador Puig Antich); Som guspira; Zurekin (a Mikel Laboa); Només som xifres (a Palabrarma); Sois ejemplo (a Habeas Corpus).</p><p>Cançons amb poema: “Guanyarem”, poema de Josep Maria Prous i Vila; “Tres voltes rebels”, fragments de poesia de Manuel de Pedrolo i Maria Mercè Marçal; “Un pilot de catalans”, poema de Víctor Mora; “No ens poden fer mal”, carta de Salvador Puig Antich; “Zurekin”, poema d’Olatz Ruiz de Azúa i Àngel Soro; “Sois ejemplo”, lletra d’Habeas Corpus.</p></div></div>
+<div class="music-item"><div class="music-date">2014</div><div><h2>Octubre–novembre · Gira de presentació d’Homenatge 1.0</h2><p>Fraga, Lleida, Puigverd de Lleida, Montoliu de Lleida, Castellserà, Reus, Tarragona, Igualada, Barcelona, Gràcia, Girona, Palafrugell, Seva, Navàs, Terrassa, Vilafranca del Penedès, Sabadell, Valls, Agurain, Iruñea, Donosti, Arrigorriaga, Bilbao, Lazkao, Lizarraga, Gasteiz, Vallecas, Gran Canària, París, Ancona, Milano, Dublin i Berlin.</p></div></div>
 </section>
 </main>
 <script>
